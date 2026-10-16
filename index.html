@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#120d19">
+<title>For Jiya, My Laddu 💗</title>
+<style>
+:root{--bg:#120d19;--panel:#201525;--pink:#ff9fc9;--pink2:#ff5c9d;--cream:#fff1f7;--muted:#d8c3d4}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(ellipse at top,#352039 0,#17101f 48%,#0d0912 100%);color:var(--cream);font-family:Georgia,'Times New Roman',serif;min-height:100vh}
+button,input{font:inherit}button{cursor:pointer}
+#lock{min-height:100svh;display:flex;align-items:center;justify-content:center;padding:24px;text-align:center;position:relative;overflow:hidden}
+.lock-card{width:min(100%,430px);padding:36px 25px;border:1px solid #ffafd933;border-radius:28px;background:#ffffff08;box-shadow:0 20px 80px #0005;backdrop-filter:blur(12px);position:relative;z-index:2}
+.moon{font-size:3.3rem;filter:drop-shadow(0 0 20px #ff9fc9)}.eyebrow{font:600 .72rem Arial,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:var(--pink)}
+h1{font-size:clamp(2.6rem,10vw,4rem);line-height:1;margin:15px 0}h1 em,.pink{color:var(--pink)}
+.lock-card p{color:var(--muted);line-height:1.7}
+input{width:100%;padding:15px 17px;border-radius:14px;border:1px solid #ff9fc966;background:#100b16;color:white;text-align:center;letter-spacing:.4em;font-size:1.25rem;outline:none;margin:10px 0}
+input:focus{border-color:var(--pink);box-shadow:0 0 0 3px #ff9fc922}
+.btn{border:0;border-radius:999px;padding:14px 23px;background:linear-gradient(110deg,#ffc2df,#ff5c9d);color:#351124;font-weight:bold;box-shadow:0 8px 28px #ff5c9d30;transition:.2s}
+.btn:hover{transform:translateY(-2px)}.error{min-height:24px;color:#ffb4c8;font: .9rem Arial,sans-serif}
+#site{display:none}.topbar{position:sticky;top:0;z-index:5;background:#100b16e8;backdrop-filter:blur(12px);border-bottom:1px solid #ffffff12;padding:12px 14px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{font-size:1.05rem;color:var(--pink);white-space:nowrap}.nav{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end}.nav button{border:1px solid #ffffff20;background:#ffffff08;color:#f8e8f1;padding:8px 11px;border-radius:99px;font: .78rem Arial,sans-serif}
+.nav button.active{background:#ff9fc926;border-color:#ff9fc977;color:#ffc9e2}
+.page{display:none;min-height:82svh;padding:62px 20px 80px;text-align:center;animation:fade .5s ease}.page.active{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.hero{min-height:80svh;display:flex;flex-direction:column;align-items:center;justify-content:center}
+h2{font-size:clamp(2.3rem,8vw,4.8rem);line-height:1.05;margin:17px 0}h2 em{color:var(--pink)}
+.lead{max-width:650px;margin:0 auto 25px;color:var(--muted);font-size:1.08rem;line-height:1.85}
+.pill{display:inline-block;border:1px solid #ff9fc944;color:#ffc4de;border-radius:99px;padding:8px 13px;font: .78rem Arial,sans-serif;letter-spacing:.08em}
+.photo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),340px));justify-content:center;gap:24px;margin:28px auto}
+.photo-card{padding:10px;background:linear-gradient(145deg,#ffd5e8,#ff5c9d,#9975b8);border-radius:22px;box-shadow:0 18px 50px #0005}
+.photo-card img{display:block;width:100%;height:410px;object-fit:cover;border-radius:15px}.photo-card:nth-child(2) img{object-position:center 30%}
+.caption{font-style:italic;color:#ffc4de;font-size:1.1rem;margin:14px 0 4px}
+.letter{max-width:720px;margin:26px auto;padding:clamp(23px,5vw,43px);text-align:left;background:linear-gradient(135deg,#ffffff0d,#ffffff04);border:1px solid #ffffff1c;border-radius:24px}
+.letter p{line-height:1.95;color:#f4e6f1;font-size:1.06rem}.signature{font-style:italic;color:var(--pink)!important;font-size:1.3rem!important}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:15px;max-width:850px;margin:30px auto}
+.card{padding:24px 18px;border:1px solid #ffffff1a;background:#ffffff08;border-radius:20px}.card .icon{font-size:2.1rem}.card h3{color:#ffc3df}.card p{color:var(--muted);line-height:1.7}
+.bigquote{font-size:clamp(1.5rem,5vw,2.6rem);line-height:1.6;max-width:780px;margin:30px auto;color:#ffe6f2}
+.heart{color:var(--pink);display:inline-block;animation:pulse 1.4s infinite}@keyframes pulse{50%{transform:scale(1.18)}}
+footer{text-align:center;padding:24px;color:#bfaabd;font-size:.85rem}
+.floater{position:fixed;bottom:-40px;z-index:10;pointer-events:none;animation:rise linear forwards;color:#ff9fc9}
+@keyframes rise{to{transform:translateY(-110vh) rotate(30deg);opacity:0}}
+@media(max-width:600px){.topbar{align-items:flex-start;flex-direction:column}.nav{justify-content:flex-start}.page{padding:45px 17px 65px}.photo-card img{height:390px}}
+</style>
+</head>
+<body>
+<section id="lock">
+ <div class="lock-card">
+  <div class="moon">🌙💗</div><div class="eyebrow">a little place, just for you</div>
+  <h1>Hi, <em>Laddu</em></h1>
+  <p>Some surprises are meant for one special person.<br>Enter our little secret code to open yours. 💌</p>
+  <form id="unlockForm"><input id="pass" type="password" inputmode="numeric" maxlength="4" placeholder="••••" aria-label="Passkey" autocomplete="off"><br><button class="btn" type="submit">Unlock your surprise ♡</button></form>
+  <div class="error" id="error"></div><p style="font-size:.8rem">A tiny surprise made with love for Jiya.</p>
+ </div>
+</section>
+
+<div id="site">
+ <header class="topbar"><div class="brand">♡ For Jiya, my Laddu</div><nav class="nav">
+  <button class="active" data-page="home">Home</button><button data-page="photos">Her photos</button><button data-page="letter">A letter</button><button data-page="distance">Distance</button><button data-page="promise">One last thing</button>
+ </nav></header>
+ <main>
+  <section class="page active" id="home">
+   <div class="hero"><span class="pill">A LITTLE UNIVERSE FOR YOU ✦</span><h2>For Jiya,<br><em>my Laddu</em> <span class="heart">♥</span></h2>
+   <p class="lead">The miles may be between us, but you still find your way into my thoughts, my smiles, and the little moments of every day.</p>
+   <button class="btn" data-goto="photos">Come see your beautiful self →</button><p style="color:#bfaabd;font-size:.85rem;margin-top:22px">Made with love, one tiny page at a time.</p></div>
+  </section>
+  <section class="page" id="photos"><div class="eyebrow">my favourite view</div><h2>You, in your own <em>little universe</em> ✨</h2><p class="lead">Two moments, one very special person. I wish I could put every memory with you in a frame.</p>
+   <div class="photo-grid"><div><div class="photo-card"><img src="images/jiya-1.jpg" alt="Jiya in a checkered shirt"></div><p class="caption">My pretty girl, just being you. ♡</p></div><div><div class="photo-card"><img src="images/jiya-2.jpg" alt="Jiya on an evening out"></div><p class="caption">A little moment I wish I could pause. 🌙</p></div></div>
+   <button class="btn" data-goto="letter">There's a letter for you →</button>
+  </section>
+  <section class="page" id="letter"><div class="eyebrow">from my heart to yours</div><h2>Dear <em>Laddu</em> 💌</h2>
+   <div class="letter"><p>Jiya, my Laddu,</p>
+    <p>I wanted to make you something that you could open whenever you miss me or need a little reminder of how loved and appreciated you are.</p>
+    <p>You have supported me in moments when I felt like I was losing again. You may not even realise how much your words, your care, and simply being there mean to me. You make hard days feel a little less heavy.</p>
+    <p>Those short moments we get together are precious to me. Sometimes fifteen minutes with you can leave me wishing the whole day had stopped. And when it's time to say goodbye and the distance returns, I carry the memory of you with me.</p>
+    <p>I can't promise that every day will be easy, or that distance won't feel difficult sometimes. But I can promise to keep caring, keep listening, and keep cheering for you too. I want your dreams to grow, your smile to stay bright, and your heart to feel safe being itself.</p>
+    <p>This website is small, but the thought behind it is simple: you matter to me, Jiya. Even when we're not in the same place, you're never just “far away” in my heart.</p>
+    <p class="signature">With all my affection,<br>the one who calls you Laddu 💗</p>
+   </div><button class="btn" data-goto="distance">Read about our distance →</button>
+  </section>
+  <section class="page" id="distance"><div class="eyebrow">miles apart, still close in thought</div><h2>Distance is a chapter,<br><em>not the whole story.</em> 🌙</h2>
+   <p class="bigquote">“I can't always be beside you, but I can still be someone who believes in you, supports you, and looks forward to seeing you again.”</p>
+   <div class="cards"><div class="card"><div class="icon">📱</div><h3>Little check-ins</h3><p>A message, a call, or a simple “reached safely?” can make a faraway day feel warmer.</p></div><div class="card"><div class="icon">🫂</div><h3>Until the next hug</h3><p>Every goodbye comes with the hope of another hello. I'll treasure our time together.</p></div><div class="card"><div class="icon">🌷</div><h3>Your own dreams too</h3><p>Keep growing, learning, laughing, and becoming the person you want to be. I'll be cheering for you.</p></div></div>
+   <p class="lead">No pressure to be happy every second, and no need to be perfect. Just keep being you, my Laddu. ♡</p><button class="btn" data-goto="promise">One final surprise →</button>
+  </section>
+  <section class="page" id="promise"><div class="eyebrow">just one more thing</div><h2>For my favourite <em>girl</em> 🧸</h2><p class="lead">Tap the button. This one's just for you.</p>
+   <button class="btn" id="finalBtn">A little message from me 💖</button>
+   <div id="finalMessage" style="display:none"><p class="bigquote">Jiya, my Laddu… <span class="heart">♥</span><br>If this made you smile even a little, then my surprise worked.</p><p class="lead">You are appreciated more than a webpage can ever say. Sending you a long-distance hug today, and saving a real one for when I see you next. 🫂💗</p><button class="btn" id="heartsBtn">Send a sky full of hearts ✨</button></div>
+   <p style="margin-top:42px;color:#cbb6ca">Until the next hello, take care of my Laddu. ♡</p>
+  </section>
+ </main><footer>Made with <span class="heart">♥</span> for Jiya · my Laddu</footer>
+</div>
+<script>
+const form=document.getElementById('unlockForm');
+form.addEventListener('submit',e=>{e.preventDefault();if(document.getElementById('pass').value==='0602'){document.getElementById('lock').style.display='none';document.getElementById('site').style.display='block';window.scrollTo(0,0);hearts(12)}else{document.getElementById('error').textContent='Hmm, try the secret code one more time, Laddu 💗';document.getElementById('pass').value='';}});
+function showPage(id){document.querySelectorAll('.page').forEach(p=>p.classList.toggle('active',p.id===id));document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.page===id));window.scrollTo({top:0,behavior:'smooth'});}
+document.querySelectorAll('[data-page]').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.page)));
+document.querySelectorAll('[data-goto]').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.goto)));
+document.getElementById('finalBtn').addEventListener('click',()=>{document.getElementById('finalMessage').style.display='block';document.getElementById('finalBtn').textContent='Opened with love 💗';hearts(24)});
+document.getElementById('heartsBtn').addEventListener('click',()=>hearts(45));
+function hearts(n){for(let i=0;i<n;i++)setTimeout(()=>{let h=document.createElement('span');h.className='floater';h.textContent=['♡','♥','💗','✨'][Math.floor(Math.random()*4)];h.style.left=Math.random()*100+'vw';h.style.fontSize=(16+Math.random()*23)+'px';h.style.animationDuration=(4+Math.random()*5)+'s';document.body.appendChild(h);setTimeout(()=>h.remove(),10000)},i*75)}
+</script>
+</body></html>
